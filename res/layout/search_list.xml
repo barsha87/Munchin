@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mun4"
+    android:padding="8px"
+    android:scrollbars="vertical"
+    >
+<TextView 
+	android:text="Search Restaurants near other locations" 
+	android:id="@+id/search_loc" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:textColor="#ffffff"
+    android:textSize="18px">
+</TextView>
+<LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<EditText 
+	android:id="@+id/et_search" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:hint="Enter location"
+	android:paddingTop="3px">
+	</EditText>
+<ImageButton 
+	android:id="@+id/b2_search"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:onClick="onSearch"
+	android:src="@drawable/search1">
+</ImageButton>
+</LinearLayout>
+
+<TextView 
+ android:id="@+id/TextView01" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:textColor="#ffffff"
+ android:textSize="18px">
+ </TextView>
+ <ListView  
+    android:id="@+id/searchList"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/trans"
+    android:cacheColorHint="#00000000"
+/>
+</LinearLayout>

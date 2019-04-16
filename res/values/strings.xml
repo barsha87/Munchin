@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Munchin</string>
+    <string name="dist_prompt">distance</string>
+    <string-array name="dist_array">
+        <item> less than 1 km </item>
+        <item> less than 3 km </item>
+        <item> less than 5 km </item>
+        <item> all </item>
+    </string-array>
+</resources>

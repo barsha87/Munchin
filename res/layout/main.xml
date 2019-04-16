@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mun"
+    android:padding="8px"
+    android:scrollbars="vertical"
+    >
+<TextView  
+    android:id="@+id/myTextView"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textStyle="bold"
+    android:textColor="#c71585"
+    android:textSize="18px"
+    android:typeface="serif">
+</TextView>
+<LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<EditText 
+	android:id="@+id/filter" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:hint="filter restaurants by type"
+	android:paddingTop="3px">
+	</EditText>
+<ImageButton 
+	android:id="@+id/b_search"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/search1"
+	android:onClick="onFilter">
+</ImageButton>
+</LinearLayout>
+<Button 
+	android:id="@+id/Button01"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:onClick="handleClick"
+	android:text="Populate Database">
+</Button>
+<ListView  
+    android:id="@+id/myList"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/trans"
+    android:cacheColorHint="#00000000"
+/>
+</LinearLayout>

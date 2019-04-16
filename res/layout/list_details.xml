@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/mun2"
+	android:padding="8px">
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_alignParentTop="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<ScrollView 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:scrollbars="none">
+<LinearLayout
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+	android:id="@+id/Tv_Name"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textSize="24px"
+	android:paddingBottom="8px"
+	android:textStyle="bold"
+	android:textColor="#000000"
+/>
+<View
+    android:layout_height="2dip"
+    android:layout_width="fill_parent"
+    android:background="#FF909090"
+    android:paddingTop="5px"
+    android:paddingBottom="5px" />
+<TextView
+	android:id="@+id/Tv_addr"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:text="\nAddress:"
+	android:textSize="20px"
+	android:paddingBottom="8px"
+	android:textStyle="italic"
+	android:textColor="#000000"
+	android:typeface="serif">
+</TextView>
+<TextView
+	android:id="@+id/Tv_Address"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textSize="18px"
+	android:paddingBottom="8px"
+	android:textColor="#000000"
+>
+</TextView>
+<View
+    android:layout_height="2dip"
+    android:layout_width="fill_parent"
+    android:background="#FF909090"
+    android:paddingTop="5px"
+    android:paddingBottom="5px" />
+<TextView
+	android:id="@+id/Tv_Contact"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:text="\nContact:"
+	android:textSize="20px"
+	android:paddingBottom="8px"
+	android:textStyle="italic"
+	android:textColor="#000000"
+	android:typeface="serif"
+	>
+</TextView>
+<TextView
+	android:id="@+id/Tv_cntct"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textSize="18px"
+	android:paddingBottom="8px"
+	android:textColor="#000000"
+
+	>
+</TextView>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+
+<Button 
+	android:layout_alignParentBottom="true"
+	android:text="Show On Map" 
+	android:id="@+id/MapButton" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:onClick="mapClick">
+</Button>
+</RelativeLayout>
